@@ -40,5 +40,4 @@ int mainMenu() {
 
     }
 
-    return 0;
 }

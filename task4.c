@@ -30,7 +30,7 @@ void task4() {
 		timer[i] = 0;
 	}
 
-	//generate the 7 random arrays that will get sorted
+	//generate the 1 random arrays that will get sorted
 	for (i = 0; i < sizeof(arrPtrs) / sizeof(arrPtrs[0]); i++) {
 		timer[0] = clock(); //timer 0 init performance of random array
 		arrPtrs[i] = generate_array(arraySize[i]);
@@ -50,10 +50,20 @@ void task4() {
 		tempArray[j] = *(arrPtrs[k] + j);
 	}
 
+    //print the array
+    printf("Random:\n");
+    print_array(tempArray, arraySize[k]);
+
+
 	timer[1] = clock(); //timer 1 sorting performance of array
 	insertion_sort(tempArray, arraySize[k]);
 	timer[1] = ((double)clock() - timer[1]) / CLOCKS_PER_SEC;
 	printf("Insertion Sorting with Array:\n");
+
+	//print the array
+	printf("Sorted:\n");
+	print_array(tempArray, arraySize[k]);
+
 	printf("Init: %fs\t Sorting performance: %fs\n\n", timer[0], timer[1]);
 
 	//if k == the Elements of arrPtrs (amount of arrays) - 1

@@ -18,7 +18,7 @@ void task3() {
 
     int* arrPtrs[1];
     int arraySize[1] = { 2000 };
-    float timer[20]; //7 array sizes times 4 algorithms
+    float timer[20];
 
     int* tempArray;
 

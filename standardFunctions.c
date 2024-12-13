@@ -24,7 +24,7 @@ void cls() {
 
 int get_random_integer() { //make a random integer between -32768 and 32767 and returns this integer
 
-	return rand() % 65536 - 32768; //get random integer from -32768 to 32767
+	return (rand() << 15 | rand()) % 65536 - 32768;
 
 }
 
