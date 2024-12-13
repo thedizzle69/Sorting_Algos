@@ -10,9 +10,18 @@ To start the programm then, please type
 
 `./Sorting`
 
-If you have issues with the permissions, please go in the directory above and type
+If you have issues with the permissions, please go in the directory above by typing
+
+`cd ..`
+
+then type
 
 `chmod 777 Sorting_Algos -R`
+
+and go back to the directory by typing
+
+`cd Sorting_Algos`
+
 
 ## Modes:
 
