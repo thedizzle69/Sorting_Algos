@@ -57,12 +57,13 @@ void task4() {
 
 	timer[1] = clock(); //timer 1 sorting performance of array
 	insertion_sort(tempArray, arraySize[k]);
+
 	timer[1] = ((double)clock() - timer[1]) / CLOCKS_PER_SEC;
 	printf("Insertion Sorting with Array:\n");
 
 	//print the array
-	printf("Sorted:\n");
-	print_array(tempArray, arraySize[k]);
+	// printf("Sorted:\n");
+	// print_array(tempArray, arraySize[k]);
 
 	printf("Init: %fs\t Sorting performance: %fs\n\n", timer[0], timer[1]);
 

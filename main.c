@@ -37,13 +37,12 @@ int main() {
 			task4();
 			break;
 		case 5: //Exit
-			return 1;
+			printf("Goodbye!\n");
+            return 0;
 		default: //Error
 			printf("I think this can never happen as there is an error catch in the Main Menu.\n");
-			break;
+			return 0;
 		}
-
-		return 0;
 
 	}
 
