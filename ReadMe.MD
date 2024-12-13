@@ -4,12 +4,12 @@
 
 To compile the program, please start the compile.sh via typing
 
-'./compile.sh'
+`./compile.sh`
 
 To start the programm then, please type
 
-'./Sorting'
+`./Sorting`
 
 If you have issues with the permissions, please go in the directory above and type
 
-'chmod 777 Sorting_Algos -R'
+`chmod 777 Sorting_Algos -R`
